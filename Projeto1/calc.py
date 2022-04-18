@@ -9,14 +9,15 @@ print("\nA soma é: ", soma)
 subtracao1=number1-number2
 print("\nA subtração número 1 - número 2 é: ", subtracao1)
 
-subtracao2=number2-number1
-print("\nA subtração número 2 - número 1 é: ", subtracao2)
-
 mult=number1*number2
 print("\nA multiplicação é: ", mult)
+
+#Fazer correção em caso de divisão por zero - avisar o usuário
+if number2 == 0:
+  print("\nO segundo número é 0, não se pode realizar a divisão")
+  number2 = float(input("\nDigite outro valor para o segundo número: "))
 
 div1=number1/number2
 print("\nA divisão número 1 / número 2 é: ", div1)
 
-div2=number2/number1
-print("\nA divisão número 2 / número 1 é: ", div2)
+#fazer opções para seleção da operação matemática
